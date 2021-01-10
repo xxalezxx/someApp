@@ -1,13 +1,15 @@
 import React from "react"
 
 export const TablesScreen = () => {
-  const handleSubmit = () => {}
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
 
   return (
     <div className="tables__container">
       <h2>Buscador de mesa de votacion</h2>
       <h3>Por favor, introduzca su numero de mesa</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="tables__form">
         <input
           type="number"
           autoComplete="off"
@@ -16,7 +18,7 @@ export const TablesScreen = () => {
           name="tableNumber"
         />
         <button type="submit" className="tables__form__button-submit">
-          Buscar..
+          Buscar...
         </button>
       </form>
     </div>
