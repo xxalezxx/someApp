@@ -54,6 +54,8 @@ export const useForm = (initialState = {}) => {
       [user.id]: userStatus,
       [pass.id]: passStatus,
     })
+
+    return userStatus === "data" && passStatus === "data"
   }
 
   return [values, errors, handleInputChange, reset, verification]

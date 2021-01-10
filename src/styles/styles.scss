@@ -1,6 +1,10 @@
 
 
-@import './base/base';
 @import './base/settings';
+@import './base/base';
 
 @import './components/login/LoginScreen';
+
+@import "./components/ui/navbar/navbar";
+
+@import "./components/DashboardRouters/dashboardRouters";

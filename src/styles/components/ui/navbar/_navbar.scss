@@ -1,0 +1,54 @@
+.navbar__main {
+  height: 50px;
+  width: 100%;
+  background-color: $primary;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1px 3px black;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  margin-bottom: 3px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__menu-botton {
+  height: 100%;
+  width: 100px;
+  color: white;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: $primary;
+  transition: all 200ms linear;
+  border-radius: 6px;
+
+  &:hover {
+    color: white;
+    box-shadow: 1px 1px 10px black;
+    transform: scaleX(1.01);
+    transform: scaleY(1.01);
+  }
+  &:active {
+    color: black;
+    box-shadow: 1px 1px 3px black inset;
+  }
+}
+
+.navbar__menu {
+  height: 100%;
+  width: 30%;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar__logo {
+  height: 100%;
+  width: 30%;
+}
+
+@import "./navbar-res";

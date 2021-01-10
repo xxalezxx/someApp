@@ -1,13 +1,25 @@
-import React from "react"
+import React, { useContext } from "react"
 
+import { AuthContext } from "../../auth/AuthContext"
+import { types } from "../../types/types"
 import { useForm } from "../../hooks/useForm"
 
-export const LoginScreen = () => {
-  const [formValues, errors, handleInputChange, , verification] = useForm()
+export const LoginScreen = ({ history }) => {
+  const [, errors, handleInputChange, , verification] = useForm()
+  const { dispatch } = useContext(AuthContext)
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    verification(e)
+    if (verification(e)) {
+      const lastPath = localStorage.getItem("lasPath") || "/"
+      dispatch({
+        type: types.login,
+        payload: {
+          name: "SomeBody",
+        },
+      })
+      history.replace(lastPath)
+    }
   }
 
   return (
