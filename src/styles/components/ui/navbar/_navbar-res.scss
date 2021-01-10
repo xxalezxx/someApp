@@ -32,3 +32,17 @@
 
     }
 }
+
+
+
+@media (max-width: 460px){
+    .navbar__menu{
+        margin-right: 6px;
+        width: 50%;
+
+    }
+
+    .navbar__menu-botton {
+        width: 70px;
+    }
+}

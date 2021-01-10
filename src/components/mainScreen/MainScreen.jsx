@@ -3,7 +3,7 @@ import React from "react"
 export const MainScreen = () => {
   return (
     <div>
-      <h2>hola</h2>
+      <h2>Sistema de verificacion y conteo virtual</h2>
     </div>
   )
 }
