@@ -5,5 +5,9 @@ export const useJson = (initialState = {}) => {
     return JSON.parse(initialState)
   })
 
-  return [entry]
+  const haveSomeInformation = () => {
+    return entry.length
+  }
+
+  return [entry, haveSomeInformation]
 }
