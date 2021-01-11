@@ -1,5 +1,5 @@
 .tablesForm__loading-data {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 20%;
   height: 40%;
@@ -31,6 +31,48 @@
     100%{
         transform: rotate(360deg);
         
+    }
+}
+
+.tablesForm__main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tablesForm__content{
+
+}
+
+.tablesForm__aside{
+    height: 100vh;
+    width: 10%;
+    background-color: lighten($color: $primary, $amount: 40);
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.tablesForm__aside__principalCard{
+    height: 100px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: $secundary;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    scroll-behavior: smooth;
+
+    & > div{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    & div:nth-child(2){
+        font-weight: bold;
     }
 }
 
