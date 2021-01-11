@@ -8,12 +8,30 @@
         height: 50%;
     }
 
+    .tablesForm__aside{
+        width: 15%;
+    }
+
 }
 
 @media (max-width: 710px){
     .tablesForm__loading-data{
         height: 60%;
         width: 50%;
+    }
+
+    .tablesForm__main{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .tablesForm__aside{
+        flex-direction: row;
+        justify-content: start;
+        height: 50px;
+        width: 100%;
+    }
+    .tablesForm__content{
+        height: 70%;
     }
 
 }
