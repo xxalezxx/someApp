@@ -1,32 +1,49 @@
 
-
-@media (max-width: 830px){
-    .tablesForm__loading-data{
-        height: 50%;
-        width: 30%;
-    }
-}
-
-
-@media (max-width: 600px){
+@media (max-width: 1100px){
     .tablesForm__loading-data{
         height: 60%;
         width: 40%;
+    }
+    .tablesForm__loading-data__img{
+        height: 50%;
+    }
 
-        & img{
-            height: 60%;
-        }
+}
+
+@media (max-width: 710px){
+    .tablesForm__loading-data{
+        height: 60%;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 560px){
+    .tablesForm__loading-data{
+        height: 60%;
+        width: 70%;
     }
 
 }
 
 @media (max-width: 400px){
     .tablesForm__loading-data{
-        height: 40%;
-        width: 60%;
+        height: 60%;
+        width: 70%;
+    }
 
-        & img{
-            height: 50%;
-        }
+    .tablesForm__loading-data__img{
+        height: 40%;
+    }
+}
+
+@media (max-width: 320px){
+    .tablesForm__loading-data{
+        height: 50%;
+        width: 70%;
+    }
+
+    .tablesForm__loading-data__img{
+        height: 30%;
     }
 }
