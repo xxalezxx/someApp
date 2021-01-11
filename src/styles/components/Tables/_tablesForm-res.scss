@@ -22,13 +22,18 @@
 
     .tablesForm__main{
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     .tablesForm__aside{
         flex-direction: row;
-        justify-content: start;
-        height: 50px;
+        height: 100px;
         width: 100%;
+        justify-content: space-around;
+    }
+
+    .tablesForm__aside__principalCard{
+        height: 80px;
+        width: 25%;
     }
     .tablesForm__content{
         height: 70%;
@@ -41,6 +46,9 @@
         height: 60%;
         width: 70%;
     }
+    .tablesForm__aside__principalCard{
+        font-size: 13px;
+    }
 
 }
 
@@ -52,6 +60,14 @@
 
     .tablesForm__loading-data__img{
         height: 40%;
+    }
+    .tablesForm__aside__principalCard{
+        font-size: 10px;
+    }
+}
+@media (max-width: 470px){
+    .tablesForm__aside__principalCard{
+        font-size: 10px;
     }
 }
 
