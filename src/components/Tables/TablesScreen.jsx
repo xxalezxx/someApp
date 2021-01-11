@@ -16,7 +16,11 @@ export const TablesScreen = () => {
   }
 
   return (
-    <div className="tables__container">
+    <div
+      className={`tables__container ${
+        errors.input === "noData" && "wrong-border"
+      }`}
+    >
       <h2>Buscador de mesa de votacion</h2>
       <h3>Por favor, introduzca su numero de mesa</h3>
       <form onSubmit={handleSubmit} className="tables__form">
