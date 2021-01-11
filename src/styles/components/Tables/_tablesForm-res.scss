@@ -1,0 +1,32 @@
+
+
+@media (max-width: 830px){
+    .tablesForm__loading-data{
+        height: 50%;
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 600px){
+    .tablesForm__loading-data{
+        height: 60%;
+        width: 40%;
+
+        & img{
+            height: 60%;
+        }
+    }
+
+}
+
+@media (max-width: 400px){
+    .tablesForm__loading-data{
+        height: 40%;
+        width: 60%;
+
+        & img{
+            height: 50%;
+        }
+    }
+}
