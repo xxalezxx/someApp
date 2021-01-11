@@ -6,7 +6,6 @@ export const TablesScreen = () => {
   const history = useHistory()
 
   const handleOnchange = ({ target }) => {
-    console.log(target.value)
     setErrors({
       input: target.value?.length > 0 && target.value >= 0 ? "data" : "noData",
     })

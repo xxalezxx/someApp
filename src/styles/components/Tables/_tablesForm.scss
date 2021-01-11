@@ -1,0 +1,35 @@
+.tablesForm__loading-data {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 40%;
+  border: 2px solid black;
+  margin: 30px auto;
+  box-shadow: 1px 1px 4px black;
+  align-content: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  
+  & img{
+      animation-name: loadingRotation;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      
+  }
+}
+
+.tablesForm__loading-data__img {
+  height: 80%;
+}
+
+@keyframes loadingRotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
