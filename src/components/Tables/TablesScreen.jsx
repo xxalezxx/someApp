@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import { useHistory } from "react-router-dom"
 
 export const TablesScreen = () => {
   const [errors, setErrors] = useState({})
+  const history = useHistory()
 
   const errorsInformation = (e) => {
     e.target[0].value.length < 1
@@ -13,6 +15,7 @@ export const TablesScreen = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     errorsInformation(e)
+    Object.entries(errors).length !== 0 && history.push("/tableForm")
   }
 
   return (
