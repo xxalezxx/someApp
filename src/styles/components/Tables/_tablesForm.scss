@@ -60,6 +60,7 @@
 
 .tablesForm__aside__principalCard{
     height: 100px;
+    color: whitesmoke;
     width: 90%;
     margin: 10px auto;
     display: flex ;
@@ -71,9 +72,12 @@
         margin-bottom: 5px;
         margin-top: 5px;
     }
+    
     & div:nth-child(2){
         font-weight: bold;
-        text-align: center
+        text-align: center;
+        color: black;
+        font-size: 17px;
     }
 }
 

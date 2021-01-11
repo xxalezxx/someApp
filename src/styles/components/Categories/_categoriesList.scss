@@ -7,4 +7,23 @@
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 1px 1px 4px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoriesList__main-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.categoriesList__main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
 }
