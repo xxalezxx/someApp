@@ -2,20 +2,26 @@ import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 
 export const TablesScreen = () => {
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState({ input: "start" })
   const history = useHistory()
 
-  const errorsInformation = (e) => {
-    e.target[0].value.length < 1
-      ? setErrors({
-          input: "noData",
-        })
-      : setErrors({})
+  const handleOnchange = ({ target }) => {
+    console.log(target.value)
+    setErrors({
+      input: target.value?.length > 0 && target.value >= 0 ? "data" : "noData",
+    })
   }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    errorsInformation(e)
-    Object.entries(errors).length !== 0 && history.push("/tableForm")
+    Object.entries(errors)[0][1] === "data"
+      ? history.push({
+          pathname: "/tableForm",
+          state: { detail: e.target[0].value },
+        })
+      : setErrors({
+          input: "noData",
+        })
   }
 
   return (
@@ -28,11 +34,15 @@ export const TablesScreen = () => {
       <h3>Por favor, introduzca su numero de mesa</h3>
       <form onSubmit={handleSubmit} className="tables__form">
         <input
+          autoFocus="on"
           type="number"
           autoComplete="off"
           placeholder="Numero mesa"
           className="tables__form__input"
           name="tableNumber"
+          onChange={handleOnchange}
+          min="0"
+          step="1"
         />
         <div className="login__box-form__wrong-input">
           <span
