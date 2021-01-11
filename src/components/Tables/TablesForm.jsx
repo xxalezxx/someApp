@@ -1,7 +1,21 @@
 import React from "react"
+import { useJson } from "../../hooks/useJson"
+import { useJsonData } from "../../hooks/useJsonData"
+import { json } from "../../Json/mesa559"
+import { CategoriesList } from "../Categories/CategoriesList"
 
 export const TablesForm = (props) => {
   const table = props.location.state.detail
+  const [entry] = useJson(json)
+  const [
+    getTable,
+    getCodeSchool,
+    getNameSchool,
+    getCircuitName,
+    getCircuitCode,
+    getCategories,
+  ] = useJsonData(entry)
+  const existingData = (data) => (data.toString().length > 0 ? data : "---")
 
   return (
     <>
@@ -17,20 +31,22 @@ export const TablesForm = (props) => {
         <aside className="tablesForm__aside">
           <div className="tablesForm__aside__principalCard">
             <div>MESA</div>
-            <div>{table}</div>
+            <div>{existingData(getTable)}</div>
           </div>
           <div className="tablesForm__aside__principalCard">
             <div>ESCUELA</div>
-            <div>Sagrado Corazon</div>
-            <div>E001</div>
+            <div>{existingData(getNameSchool)}</div>
+            <div>{existingData(getCodeSchool)}</div>
           </div>
           <div className="tablesForm__aside__principalCard">
             <div>Circuito</div>
-            <div>Avellaneda Centro</div>
-            <div>C045</div>
+            <div>{existingData(getCircuitName)}</div>
+            <div>{existingData(getCircuitCode)}</div>
           </div>
         </aside>
-        <div className="tablesForm__content">contenidio</div>
+        <div className="tablesForm__content">
+          <CategoriesList list={getCategories} />
+        </div>
       </div>
     </>
   )

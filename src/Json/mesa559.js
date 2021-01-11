@@ -1,3 +1,5 @@
+export const json = `
+
 {
   "nro_mesa": 559,
   "escuela": {
@@ -77,3 +79,4 @@
     ]
     
     }
+`
