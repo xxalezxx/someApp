@@ -1,86 +1,82 @@
+@media (max-width: 1100px) {
+  .tablesForm__loading-data {
+    height: 60%;
+    width: 40%;
+  }
+  .tablesForm__loading-data__img {
+    height: 50%;
+  }
 
-@media (max-width: 1100px){
-    .tablesForm__loading-data{
-        height: 60%;
-        width: 40%;
-    }
-    .tablesForm__loading-data__img{
-        height: 50%;
-    }
-
-    .tablesForm__aside{
-        width: 15%;
-    }
-
+  .tablesForm__aside {
+    width: 15%;
+  }
 }
 
-@media (max-width: 710px){
-    .tablesForm__loading-data{
-        height: 60%;
-        width: 50%;
-    }
+@media (max-width: 710px) {
+  .tablesForm__loading-data {
+    height: 60%;
+    width: 50%;
+  }
 
-    .tablesForm__main{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .tablesForm__aside{
-        flex-direction: row;
-        height: 100px;
-        width: 100%;
-        justify-content: space-around;
-    }
+  .tablesForm__main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .tablesForm__aside {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-    .tablesForm__aside__principalCard{
-        height: 80px;
-        width: 25%;
-        border: none;
-        border-right: 2px solid black;
-        border-left: 2px solid black;
-    }
-    .tablesForm__content{
-        height: 70%;
-    }
-
+  .tablesForm__aside__principalCard {
+    height: 80px;
+    width: 25%;
+    border: none;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+  }
+  .tablesForm__content {
+    height: 70%;
+  }
 }
 
-@media (max-width: 560px){
-    .tablesForm__loading-data{
-        height: 60%;
-        width: 70%;
-    }
-    .tablesForm__aside__principalCard{
-        font-size: 13px;
-    }
-
+@media (max-width: 560px) {
+  .tablesForm__loading-data {
+    height: 60%;
+    width: 70%;
+  }
+  .tablesForm__aside__principalCard {
+    font-size: 13px;
+  }
 }
 
-@media (max-width: 400px){
-    .tablesForm__loading-data{
-        height: 60%;
-        width: 70%;
-    }
+@media (max-width: 400px) {
+  .tablesForm__loading-data {
+    height: 60%;
+    width: 70%;
+  }
 
-    .tablesForm__loading-data__img{
-        height: 40%;
-    }
-    .tablesForm__aside__principalCard{
-        font-size: 10px;
-    }
+  .tablesForm__loading-data__img {
+    height: 40%;
+  }
+  .tablesForm__aside__principalCard {
+    font-size: 10px;
+  }
 }
-@media (max-width: 470px){
-    .tablesForm__aside__principalCard{
-        font-size: 10px;
-    }
+@media (max-width: 470px) {
+  .tablesForm__aside__principalCard {
+    font-size: 10px;
+  }
 }
 
-@media (max-width: 320px){
-    .tablesForm__loading-data{
-        height: 50%;
-        width: 70%;
-    }
+@media (max-width: 320px) {
+  .tablesForm__loading-data {
+    height: 50%;
+    width: 70%;
+  }
 
-    .tablesForm__loading-data__img{
-        height: 30%;
-    }
+  .tablesForm__loading-data__img {
+    height: 30%;
+  }
 }
