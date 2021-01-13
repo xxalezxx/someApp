@@ -37,6 +37,7 @@ function NavbarHamburger() {
               <Link to="#" className="navbar__hamburger__menu-bars">
                 <AiIcons.AiOutlineClose />
               </Link>
+              <span>MENU</span>
             </li>
             {menuNavBar("navbar__hamburger__item-menu").map((item, index) => {
               return (
