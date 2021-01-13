@@ -1,6 +1,6 @@
 import React from "react"
 import * as AiIcons from "react-icons/ai"
-import { Airtable, SiAirtable } from "react-icons/si"
+import { GiVote } from "react-icons/gi"
 
 export const menuNavBar = (classNameMenuItems) => [
   {
@@ -12,7 +12,7 @@ export const menuNavBar = (classNameMenuItems) => [
   {
     title: "Mesas",
     path: "/tables",
-    icon: <AiIcons.AiFillHome />,
+    icon: <GiVote />,
     cName: classNameMenuItems,
   },
 ]

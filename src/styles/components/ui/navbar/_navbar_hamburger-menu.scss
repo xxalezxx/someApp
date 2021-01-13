@@ -12,10 +12,19 @@
   font-size: 30px;
   width: 40px;
   background: none;
+  border: none;
+
+  & svg {
+    margin-top: 8px;
+  }
+
+  &:hover {
+    border: none;
+  }
 }
 
 .navbar__hamburger__menu {
-  background-color: #060b26;
+  background-color: darken($color: $primary, $amount: 10);
   width: 250px;
   height: 100vh;
   display: flex;
@@ -61,7 +70,8 @@
 }
 
 .navbar__hamburger__toggle {
-  background-color: #060b26;
+  background-color: darken($color: $primary, $amount: 3);
+  border-bottom: 1px solid lightslategray;
   width: 100%;
   height: 80px;
   display: flex;
