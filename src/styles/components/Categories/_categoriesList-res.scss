@@ -10,6 +10,7 @@
   }
 
   .categoriesList__main-content__card {
+    margin-bottom: 8px;
     width: 90%;
   }
 
@@ -18,50 +19,37 @@
   }
 }
 
-
-@media (max-width: 500px){
-
-
-    .categoriesList__main-content__card{
-
-        & span{
-            font-size: 20px;
-        }
+@media (max-width: 500px) {
+  .categoriesList__main-content__card {
+    & span {
+      font-size: 20px;
     }
-
+  }
 }
 
-
-
-@media (max-width: 440px){
-
-    .btn-red, .btn-blue{
-        font-size: 10px;
-    }
-
+@media (max-width: 440px) {
+  .btn-red,
+  .btn-blue {
+    font-size: 10px;
+  }
 }
 
-@media (max-width: 400px){
-
-    .categoriesList__main-content__card{
-
-        & span{
-            font-size: 17px;
-        }
+@media (max-width: 400px) {
+  .categoriesList__main-content__card {
+    & span {
+      font-size: 17px;
     }
-
+  }
 }
-@media (max-width: 360px){
-
-    .categoriesList__main-content__card{
-
-        & span{
-            font-size: 15px;
-        }
+@media (max-width: 360px) {
+  .categoriesList__main-content__card {
+    & span {
+      font-size: 15px;
     }
+  }
 
-    .btn-red, .btn-blue{
-        font-size: 9px;
-    }
-
+  .btn-red,
+  .btn-blue {
+    font-size: 9px;
+  }
 }
