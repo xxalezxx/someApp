@@ -39,7 +39,7 @@ export const TablesForm = (props) => {
             <div>{existingData(getCodeSchool)}</div>
           </div>
           <div className="tablesForm__aside__principalCard">
-            <div>Circuito</div>
+            <div>CIRCUITO</div>
             <div>{existingData(getCircuitName)}</div>
             <div>{existingData(getCircuitCode)}</div>
           </div>
