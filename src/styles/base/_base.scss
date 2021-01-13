@@ -34,45 +34,5 @@ body {
   border: 2px solid black;
 }
 
-.btn-red{
-  height: 40px;
-  width: 80px;
-  border-radius: 6px;
-  border: 1px solid black;
-  outline: none;
-  color: whitesmoke;
-  margin:10px;
-  box-shadow: 1px 1px 4px black;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: red;
 
-  transition: all 200ms linear;
-
-  &:hover{
-    background-color: darken($color: red, $amount: 20);
-  }
-}
-
-.btn-blue{
-  height: 40px;
-  width: 80px;
-  border-radius: 6px;
-  border: 1px solid black;
-  outline: none;
-  color: whitesmoke;
-  margin:10px;
-  box-shadow: 1px 1px 4px black;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: blue;
-
-  transition: all 200ms linear;
-
-  &:hover{
-    background-color: darken($color: blue, $amount: 20);
-  }
-}
 
