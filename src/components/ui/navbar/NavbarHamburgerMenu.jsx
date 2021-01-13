@@ -1,11 +1,27 @@
 import React, { useState } from "react"
 import * as FaIcons from "react-icons/fa"
 import * as AiIcons from "react-icons/ai"
+import { CgLogOut } from "react-icons/cg"
 import { Link } from "react-router-dom"
 import { IconContext } from "react-icons"
 import { menuNavBar } from "../../menu/menuNavBar"
+import { useHistory } from "react-router-dom"
+import { useContext } from "react"
+import { AuthContext } from "../../../auth/AuthContext"
+import { types } from "../../../types/types"
 
 function NavbarHamburger() {
+  const { dispatch } = useContext(AuthContext)
+
+  const history = useHistory()
+
+  const handleLogout = () => {
+    history.replace("/login")
+    dispatch({
+      type: types.logout,
+    })
+  }
+
   const [sidebar, setSidebar] = useState(false)
 
   const showSidebar = () => {
@@ -49,6 +65,13 @@ function NavbarHamburger() {
                 </li>
               )
             })}
+
+            <li className="navbar__hamburger__item-menu">
+              <a className="navbar__hamburger__logout">
+                <CgLogOut />
+                <span>Salir</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </IconContext.Provider>

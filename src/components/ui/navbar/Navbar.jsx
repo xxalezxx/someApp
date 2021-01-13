@@ -29,15 +29,6 @@ export const Navbar = () => {
           classNameMainList="navbar__menu"
         />
       )}
-
-      <ul className="navbar__btn__userSettings">
-        <button
-          onClick={handleLogout}
-          className="navbar__btn__userSettings-logout"
-        >
-          Salir
-        </button>
-      </ul>
     </div>
   )
 }
