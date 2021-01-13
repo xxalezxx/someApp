@@ -1,8 +1,10 @@
 import { useContext } from "react"
-import { NavLink, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 import { AuthContext } from "../../../auth/AuthContext"
 import { types } from "../../../types/types"
+import { MenuItems } from "./MenuItems"
+import NavbarHamburger from "./NavbarHamburgerMenu"
 
 export const Navbar = () => {
   const { dispatch } = useContext(AuthContext)
@@ -18,23 +20,16 @@ export const Navbar = () => {
 
   return (
     <div className="navbar__container">
-      <ul className="navbar__menu">
-        <li className="navbar__menu-item">
-          <NavLink className="navbar__menu-item-redirect" exact to="/home">
-            Inicio
-          </NavLink>
-        </li>
-        <li className="navbar__menu-item">
-          <NavLink className="navbar__menu-item-redirect" exact to="/tables">
-            Mesas
-          </NavLink>
-        </li>
-        <li className="navbar__menu-item">
-          <NavLink className="navbar__menu-item-redirect" exact to="/home">
-            Contacto
-          </NavLink>
-        </li>
-      </ul>
+      {window.screen.width < 600 ? (
+        <NavbarHamburger />
+      ) : (
+        <MenuItems
+          classNameMenu="navbar__menu-item-redirect"
+          classNameList="navbar__menu-item"
+          classNameMainList="navbar__menu"
+        />
+      )}
+
       <ul className="navbar__btn__userSettings">
         <button
           onClick={handleLogout}
