@@ -67,7 +67,7 @@ function NavbarHamburger() {
             })}
 
             <li className="navbar__hamburger__item-menu">
-              <a className="navbar__hamburger__logout">
+              <a onClick={handleLogout} className="navbar__hamburger__logout">
                 <CgLogOut />
                 <span>Salir</span>
               </a>
